@@ -24,6 +24,3 @@
 - 实战篇：[基于 Go 协程实现图片马赛克应用](https://laravelacademy.org/post/22062)
 - 实战篇：基于 Go 语言实现实时在线聊天室系统
 - 实战篇：基于 Go 语言实现 Web 爬虫系统
-  =======
-  go-tutroial
->>>>>>> eaae4a65bd376e68a4fb163d300e90c9cf01a26e
