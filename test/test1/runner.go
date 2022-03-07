@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-tutorial/test1/runner"
+	"go-tutorial/test/test1/runner"
 	"log"
 	"os"
 	"time"

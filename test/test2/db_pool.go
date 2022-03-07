@@ -1,7 +1,7 @@
 package main
 
 import (
-	"go-tutorial/test2/pool"
+	"go-tutorial/test/test2/pool"
 	"io"
 	"log"
 	"math/rand"
