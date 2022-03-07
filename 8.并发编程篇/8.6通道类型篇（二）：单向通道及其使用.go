@@ -31,20 +31,20 @@ import (
 通道）：
 */
 
-//func test(ch chan<- int)
+//func test1(ch chan<- int)
 
 /*
-上述代码限定在 test 函数中只能写入 int 类型数据到通道 ch。
+上述代码限定在 test1 函数中只能写入 int 类型数据到通道 ch。
 */
 
 /*
 反过来，如果我们将一个通道类型变量传递到一个只允许从该通道读取数据的函数，可以通过如下方式将通道指定为单向只读通道（接收通道）：
 */
 
-//func test(ch <-chan int)
+//func test1(ch <-chan int)
 
 /*
-上述代码限定在 test 函数中只能从 ch 通道读取 int 类型数据。
+上述代码限定在 test1 函数中只能从 ch 通道读取 int 类型数据。
 */
 
 /*
@@ -105,7 +105,7 @@ func main() {
 }
 
 /*
-如果我们将 test 函数中的通道参数类型约束调整为 test(ch <-chan int)，编译代码就会报错：
+如果我们将 test1 函数中的通道参数类型约束调整为 test1(ch <-chan int)，编译代码就会报错：
 # command-line-arguments
 ./channel3.go:10:12: invalid operation: ch <- i (send to receive-only type <-chan int)
 ./channel3.go:12:10: invalid operation: close(ch) (cannot close receive-only channel)
@@ -119,7 +119,7 @@ func main() {
 我们也可以定义一个返回值类型为单向只读通道的函数，以便得到该返回值的代码只能从通道中接收数据：
 */
 
-//func test() <-chan int  {
+//func test1() <-chan int  {
 //	ch := make(chan int, 20)
 //	for i := 0; i < 100; i++ {
 //		ch <- i

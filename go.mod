@@ -1,3 +1,3 @@
-module tutorial
+module go-tutorial
 
 go 1.16
